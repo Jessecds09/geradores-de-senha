@@ -1,71 +1,156 @@
-/* Reset básico */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+:root {
+    --branco: white;
+    --cor-de-fundo: #0F172A;
+    --fundo-senha: #1E293B;
+    --fundo-texto: #334155;
+    --borda: #38BDF8;
+    --roboto: 'Roboto', sans-serif;
+    --roboto-mono: 'Roboto Mono', monospace;
 }
 
-/* Fundo e centralização */
+/* reset e fontes mantidas */
+* {
+    font-weight: 400;
+}
+
 body {
+    color: var(--branco);
+    background-color: var(--cor-de-fundo);
+    font-family: var(--roboto);
+}
+
+.titulo-principal {
+    font-family: var(--roboto-mono);
+    font-size: 32px;
+}
+
+.titulo-secundario {
+    font-size: 24px;
+}
+
+.conteudo-titulo {
+    text-align: center;
+    margin-top: 80px;
+}
+
+.conteudo-senha {
+    margin-top: 80px;
+    background: var(--fundo-senha);
+    padding: 24px;
+    border-bottom: 6px solid var(--borda);
+}
+
+#campo-senha {
+    background-color: var(--fundo-senha);
+    border: none;
+    color: var(--branco);
+    font-family: var(--roboto-mono);
+    font-size: 40px;
+    width: 70%;
+}
+
+#campo-senha:focus {
+    outline: none;
+}
+
+.conteudo {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.parametro {
+    background-color: var(--fundo-texto);
+    border: 2px solid var(--borda);
+    margin-top: 32px;
+    padding: 24px;
+}
+
+.parametro-titulo {
+    font-family: var(--roboto-mono);
+    font-size: 28px;
+}
+
+.parametro-senha__titulo {
+    font-size: 24px;
+}
+
+.parametro-coluna__senha {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.parametro-senha {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.parametro-senha-botoes {
     display: flex;
     justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background: linear-gradient(135deg, #4b79a1, #283e51);
-    color: #fff;
 }
 
-.container {
-    background-color: rgba(255, 255, 255, 0.05);
-    padding: 30px 40px;
-    border-radius: 15px;
-    text-align: center;
-    width: 320px;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
-}
-
-h1 {
-    margin-bottom: 20px;
-    font-size: 1.5rem;
-}
-
-.controls label {
-    display: block;
-    margin: 10px 0;
-    font-size: 0.9rem;
-}
-
-input[type="number"] {
-    width: 50px;
-    margin-left: 10px;
-    border-radius: 5px;
-    border: none;
-    padding: 3px;
-}
-
-button {
-    margin-top: 15px;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 8px;
-    background-color: #ff7f50;
-    color: #fff;
-    font-weight: bold;
+.parametro-senha__botao {
+    background-color: var(--fundo-texto);
+    color: var(--branco);
+    border: 2px solid var(--borda);
+    padding: 24px;
+    font-size: 24px;
     cursor: pointer;
-    transition: 0.3s;
 }
 
-button:hover {
-    background-color: #ff6347;
+.parametro-senha__texto {
+    padding: 24px;
+    border-top: 2px solid var(--borda);
+    border-bottom: 2px solid var(--borda);
+    margin: 0;
+    font-size: 24px;
 }
 
-#password {
-    margin-top: 20px;
+label {
+    font-size: 20px;
+}
+
+.checkbox {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.barra {
+    background-color: var(--fundo-senha);
+    height: 30px;
     width: 100%;
-    padding: 8px;
-    border-radius: 5px;
-    border: none;
-    text-align: center;
-    font-size: 1rem;
+}
+
+.forca {
+    height: 30px;
+    position: relative;
+    bottom: 30px;
+}
+
+.fraca {
+    width: 25%;
+    background-color: #F87171;
+}
+
+.media {
+    background-color: #FACC15;
+    width: 50%;
+}
+
+.forte {
+    background-color: #22C55E;
+    width: 100%;
+}
+
+.parametro-senha-textos {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media screen and (min-width: 768px) {
+    .parametro-coluna__senha {
+        flex-direction: row;
+    }
 }
