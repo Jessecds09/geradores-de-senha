@@ -1,14 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Mono&display=swap');
+
 :root {
     --branco: white;
-    --cor-de-fundo: #0F172A;
-    --fundo-senha: #1E293B;
-    --fundo-texto: #334155;
-    --borda: #38BDF8;
+    --cor-de-fundo: #00162E;
+    --fundo-senha: #00244D;
+    --fundo-texto: #001E40;
+    --borda: #0075FF;
     --roboto: 'Roboto', sans-serif;
     --roboto-mono: 'Roboto Mono', monospace;
 }
 
-/* reset e fontes mantidas */
 * {
     font-weight: 400;
 }
@@ -131,16 +132,16 @@ label {
 
 .fraca {
     width: 25%;
-    background-color: #F87171;
+    background-color: #E71B32;
 }
 
 .media {
-    background-color: #FACC15;
+    background-color: #FAF408;
     width: 50%;
 }
 
 .forte {
-    background-color: #22C55E;
+    background-color: #00FF85;
     width: 100%;
 }
 
@@ -148,6 +149,7 @@ label {
     display: flex;
     justify-content: space-between;
 }
+
 
 @media screen and (min-width: 768px) {
     .parametro-coluna__senha {
