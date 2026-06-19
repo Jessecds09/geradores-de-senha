@@ -1,69 +1,72 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;pt-br&quot;&gt;
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gerador de senha</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+&lt;head&gt;
+&lt;meta charset=&quot;UTF-8&quot;&gt;
+&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+&lt;title&gt;Gerador de senha&lt;/title&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;style.css&quot;&gt;
+&lt;/head&gt;
 
-<body>
-    <section class="conteudo">
-        <div class="conteudo-titulo">
-            <img src="unlock.svg" alt="cadeado fechado">
-            <h2 class="titulo-principal">Gerador de senhas</h2>
-            <h3 class="titulo-secundario">Gere instantaneamente uma senha aleatória e segura</h3>
-        </div>
-        <div class="conteudo-senha">
-            <label for="senha">Senha</label>
-            <input name="senha" type="text" id="campo-senha" readonly>
-        </div>
-        <div class="parametro">
-            <h3 class="parametro-titulo">Personalize sua senha</h3>
-            <div class="parametro-coluna__senha">
-                <div class="parametro-senha">
-                    <h4 class="parametro-senha__titulo">Número de caracteres</h4>
-                    <div class="parametro-senha-botoes">
-                        <button class="parametro-senha__botao">-</button>
-                        <p class="parametro-senha__texto">12</p>
-                        <button class="parametro-senha__botao">+</button>
-                    </div>
-                </div>
-                <div class="parametro-senha">
-                    <h4 class="parametro-senha__titulo">Características da senha</h4>
-                    <div class="parametro-senha-checkbox">
-                        <input name="maiusculo" type="checkbox" class="checkbox" checked>
-                        <label for="maiusculo">Letras maiúsculas</label>
-                    </div>
-                    <div class="parametro-senha-checkbox">
-                        <input name="minusculo" type="checkbox" class="checkbox">
-                        <label for="minusculo">Letras minúsculas</label>
-                    </div>
-                    <div class="parametro-senha-checkbox">
-                        <input name="numero" type="checkbox" class="checkbox">
-                        <label for="numero">Números</label>
-                    </div>
-                    <div class="parametro-senha-checkbox">
-                        <input name="simbolo" type="checkbox" class="checkbox">
-                        <label for="simbolo">Símbolos</label>
-                    </div>
-                </div>
-                <div class="parametro-senha">
-                    <h4 class="parametro-senha__titulo">Força da senha</h4>
-                    <div class="barra"></div>
-                    <div class="forca fraca"></div>
-                    <div class="parametro-senha-textos">
-                        <p>Fraca</p>
-                        <p>Média</p>
-                        <p>Forte</p>
-                    </div>
-                    <p class="entropia"></p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <script src="main.js"></script>
-</body>
+&lt;body&gt;
+&lt;section class=&quot;conteudo&quot;&gt;
+&lt;div class=&quot;conteudo-titulo&quot;&gt;
+&lt;img src=&quot;unlock.svg&quot; alt=&quot;cadeado fechado&quot;&gt;
+&lt;h2 class=&quot;titulo-principal&quot;&gt;Gerador de senhas&lt;/h2&gt;
+&lt;h3 class=&quot;titulo-secundario&quot;&gt;Gere instantaneamente uma senha aleatória e
+segura&lt;/h3&gt;
+&lt;/div&gt;
+&lt;div class=&quot;conteudo-senha&quot;&gt;
+&lt;label for=&quot;senha&quot;&gt;Senha&lt;/label&gt;
+&lt;input name=&quot;senha&quot; type=&quot;text&quot; id=&quot;campo-senha&quot; readonly&gt;
+&lt;/div&gt;
+&lt;div class=&quot;parametro&quot;&gt;
+&lt;h3 class=&quot;parametro-titulo&quot;&gt;Personalize sua senha&lt;/h3&gt;
+&lt;div class=&quot;parametro-coluna__senha&quot;&gt;
+&lt;div class=&quot;parametro-senha&quot;&gt;
+&lt;h4 class=&quot;parametro-senha__titulo&quot;&gt;Número de caracteres&lt;/h4&gt;
+&lt;div class=&quot;parametro-senha-botoes&quot;&gt;
+&lt;button class=&quot;parametro-senha__botao&quot;&gt;-&lt;/button&gt;
 
-</html>
+&lt;p class=&quot;parametro-senha__texto&quot;&gt;12&lt;/p&gt;
+&lt;button class=&quot;parametro-senha__botao&quot;&gt;+&lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;parametro-senha&quot;&gt;
+&lt;h4 class=&quot;parametro-senha__titulo&quot;&gt;Características da senha&lt;/h4&gt;
+&lt;div class=&quot;parametro-senha-checkbox&quot;&gt;
+&lt;input name=&quot;maiusculo&quot; type=&quot;checkbox&quot; class=&quot;checkbox&quot; checked&gt;
+&lt;label for=&quot;maiusculo&quot;&gt;Letras maiúsculas&lt;/label&gt;
+&lt;/div&gt;
+&lt;div class=&quot;parametro-senha-checkbox&quot;&gt;
+&lt;input name=&quot;minusculo&quot; type=&quot;checkbox&quot; class=&quot;checkbox&quot;&gt;
+&lt;label for=&quot;minusculo&quot;&gt;Letras minúsculas&lt;/label&gt;
+&lt;/div&gt;
+&lt;div class=&quot;parametro-senha-checkbox&quot;&gt;
+&lt;input name=&quot;numero&quot; type=&quot;checkbox&quot; class=&quot;checkbox&quot;&gt;
+&lt;label for=&quot;numero&quot;&gt;Números&lt;/label&gt;
+&lt;/div&gt;
+&lt;div class=&quot;parametro-senha-checkbox&quot;&gt;
+&lt;input name=&quot;simbolo&quot; type=&quot;checkbox&quot; class=&quot;checkbox&quot;&gt;
+&lt;label for=&quot;simbolo&quot;&gt;Símbolos&lt;/label&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;parametro-senha&quot;&gt;
+&lt;h4 class=&quot;parametro-senha__titulo&quot;&gt;Força da senha&lt;/h4&gt;
+&lt;div class=&quot;barra&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;forca fraca&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;parametro-senha-textos&quot;&gt;
+&lt;p&gt;Fraca&lt;/p&gt;
+&lt;p&gt;Média&lt;/p&gt;
+&lt;p&gt;Forte&lt;/p&gt;
+
+&lt;/div&gt;
+&lt;p class=&quot;entropia&quot;&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/section&gt;
+&lt;script src=&quot;main.js&quot;&gt;&lt;/script&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;
